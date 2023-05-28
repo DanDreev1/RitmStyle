@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RitmStyle</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header__info container">
+    <a href="#" class="header__logo"></a>
+    <nav>
+      <ul class="header__menu">
+        <li class="header__list">
+          <a href="#" class="header__link">Главная</a>
+        </li>
+        <li class="header__list">
+          <a href="#" class="header__link">Сеансы</a>
+        </li>
+        <li class="header__list">
+          <a href="#" class="header__link">Отзывы</a>
+        </li>
+        <li class="header__list">
+          <a href="#" class="header__link">Контакты</a>
+        </li>
+        <li class="header__list">
+          <a href="#" class="header__link">Новости</a>
+        </li>
+        <li class="header__list">
+          <a href="#" class="header__link">Обо мне</a>
+        </li>
+        <li class="header__list">
+          <a href="#" class="header__link">Блог</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="header__btn">Записаться на сеанс</a>
+  </header>
+  <section class="hero container">
+    <h3 class="hero__subtitle">Укрепление здоровья</h3>
+    <h1 class="hero__title">Акватерапия<br>RitmStyle</h1>
+  </section>
+  <section class="sessions container">
+    <h2 class="title">Сеансы RitmStyle</h2>
+    <div class="sessions__grid">
+      <a class="sessions__goods">
+        <span class="sessions__text">Стандартный RitmStyle</span>
+      </a>
+      <a class="sessions__goods">
+        <span class="sessions__text">RitmStyle для пар</span>
+      </a>
+      <a class="sessions__goods">
+        <span class="sessions__text">RitmStyle с полным погружением под воду</span>
+      </a>
+      <a class="sessions__goods">
+        <span class="sessions__text">RitmStyle для беременных</span>
+      </a>
+      <a class="sessions__goods">
+        <span class="sessions__text">RitmStyle + красочная подводная фотосессия</span>
+      </a>
+    </div>
+  </section>
+  <section class="reviews">
+    <h2 class="title container">Отзывы</h2>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <div class="slide">
+          <h2>Слайд 1</h2>
+          <p>Це центральний слайд</p>
+        </div>
+        <div class="slide slide--active">
+          <h2>Слайд 2</h2>
+          <p>Це лівий слайд</p>
+        </div>
+        <div class="slide">
+          <h2>Слайд 3</h2>
+          <p>Це правий слайд</p>
+        </div>
+        <div class="slide">
+          <h2>Слайд 4</h2>
+          <p>Це правий слайд</p>
+        </div>
+        <div class="slide">
+          <h2>Слайд 5</h2>
+          <p>Це правий слайд</p>
+        </div>
+      </div>
+    </div>
+    <ul class="dots__list">
+      <li class="dots__item active" onclick="showSlide(0)"></li>
+      <li class="dots__item" onclick="showSlide(1)"></li>
+      <li class="dots__item" onclick="showSlide(2)"></li>
+      <li class="dots__item" onclick="showSlide(3)"></li>
+      <li class="dots__item" onclick="showSlide(4)"></li>
+    </ul>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
