@@ -41,6 +41,11 @@
     padding: 9px 15px;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.header__btn:hover {
+    color: #018ABE;
+    background-color: #fff;
 }
 
 /*hero*/
@@ -169,19 +174,16 @@
 }
 
 /* SLIDER */
-
 .slider-wrapper {
   width: 100%;
   overflow: hidden;
 }
-
 .slider {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
-
 .slide {
   width: 500px;
   height: 280px;
@@ -193,7 +195,6 @@
   transition: transform 0.3s ease;
   opacity: 0.5;
 }
-
 .slide--active {
   width: 640px;
   height: 350px;
@@ -203,17 +204,14 @@
   opacity: 1;
   margin: 0 10px;
 }
-
 .slide-hidden {
   display: none;
 }
-
 .dots__list {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-
 .dots__item {
   width: 10px;
   height: 10px;
@@ -222,8 +220,222 @@
   margin: 60px 5px 0;
   cursor: pointer;
 }
-
 .dots__item.active {
   background-color: #999;
 }
+.slide__title {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.slide__text {
+    margin-top: 10px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
 
+/*About*/
+.about {
+    margin-top: 100px;
+}
+.about__wrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 85px;
+    align-items: center;
+}
+.about__title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+.about__text {
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+/*Price*/
+.price {
+    margin-top: 150px;
+}
+.price__info {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price__menu {
+    width: 415px;
+}
+.price__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+.price__list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #018ABE;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    width: 20px;
+    height: 10px;
+}
+.price__goods {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.price__cost {
+    font-family: "El Messiri";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.price__gift {
+    text-align: center;
+}
+.price__text {
+    margin-top: 30px;
+    font-family: "El Messiri";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+/*Map*/
+.map--container {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.map {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.map__img {
+    background-image: url(../img/map.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 860px;
+    height: 600px;
+}
+.map__banner {
+    background-color: #018ABE;
+    padding: 35px 45px;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+.map__banner:last-child{
+    margin-bottom: 0;
+}
+.map__title {
+    font-family: "El Messiri";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.map__menu {
+    margin: 20px 0;
+}
+.map__list {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.map__list:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/Icons/carbon_location-filled.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.map__list:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/Icons/Spb_metro_logo\ 1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+}
+.map__list:nth-child(3)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/Icons/bi_calendar-week-fill.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.map__btn {
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #018ABE;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+.map__btn:hover {
+    color: #fff;
+    background-color: #018ABE;
+    border: solid 2px #fff;
+}
+.copy {
+    margin: 90px auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.copy__text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.copy__autor {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+}
